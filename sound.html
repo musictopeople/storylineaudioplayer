@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>musicToPeople();</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body class="home-body" onload="document.body.style.opacity='1'">
+  <header>
+    <h1 class="homePageHeader">musicToPeople();</h1>
+  </header>
+  <p class="intro-to-player" >Below is an attempt to design a more interactive audio player.  The idea is to be able to read through a story line and while listening to featured audio tracks.  I hope you enjoy the UI and the sounds.
+    <br><br>
+    Sincerely
+    <br><br>
+    Cameron Martin Cochran
+
+  </p>
+  <div>
+    <ul>
+
+    <li class = "song-container" ><audio id="player1" src="countryLife.mp3"></audio>
+        <p class = "song-details">
+            In 2018, after learning sound synthesis with David McDonnell at the University of Cincinnati I began building drones, bird calls, waves, effects and hooking up an acoustic baby grand piano to my computer. 
+          </p>
+        <p class = "song-title">countryLife();</p>
+        <div class= "tape-Deck" >
+        <button class ="player-button play" onclick="document.getElementById('player1').play()">=></button> 
+        <button class ="player-button" onclick="document.getElementById('player1').pause()">||</button> 
+        <button class ="player-button" onclick="document.getElementById('player1').volume += 0.1">vol+</button> 
+        <button class ="player-button" onclick="document.getElementById('player1').volume -= 0.1">vol-</button> 
+        </div>
+    </li>
+
+    <li class = "song-container" ><audio id="player2" src="thisIsEnough.mp3"></audio>
+        <p class = "song-details">
+            I began to comprehend sound synthesis and David began teaching me how to create computer programs that could compose within given parameters.
+          </p>
+        
+        <p class = "song-title">thisIsEnough();</p>
+        <div class= "tape-Deck" >
+        <button class ="player-button play" onclick="document.getElementById('player2').play()">=></button> 
+        <button class ="player-button" onclick="document.getElementById('player2').pause()">||</button> 
+        <button class ="player-button" onclick="document.getElementById('player2').volume += 0.1">vol+</button> 
+        <button class ="player-button" onclick="document.getElementById('player2').volume -= 0.1">vol-</button> 
+        </div>
+
+    </li>
+    <li class = "song-container" ><audio id="player3" src="letBeautyCrushYou.mp3"></audio>
+        <p class = "song-details">
+          I started collaborating with other musicians like drummer Tom Buckley, asking them to react in real time to these compositions.
+          </p>
+          <p class = "song-title">letBeautyCrushYou();</p>
+        <div class= "tape-Deck" >
+          <button class ="player-button play" onclick="document.getElementById('player3').play()">=></button> 
+          <button class ="player-button" onclick="document.getElementById('player3').pause()">||</button> 
+          <button class ="player-button" onclick="document.getElementById('player3').volume += 0.1">vol+</button> 
+          <button class ="player-button" onclick="document.getElementById('player3').volume -= 0.1">vol-</button> 
+        </div>
+    </li>
+
+    <li class = "song-container" ><audio id="player4" src="emptyBeach.mp3"></audio>
+        <p class = "song-details">
+           I experimented with combining more percussive programmed sound synthesis and algorithmic composition with my player piano. 
+            </p>
+        <p class = "song-title">emptyBeach();</p>
+        <div class= "tape-Deck" >
+        <button class ="player-button play" onclick="document.getElementById('player4').play()">=></button> 
+        <button class ="player-button" onclick="document.getElementById('player4').pause()">||</button> 
+        <button class ="player-button" onclick="document.getElementById('player4').volume += 0.1">vol+</button> 
+        <button class ="player-button" onclick="document.getElementById('player4').volume -= 0.1">vol-</button> 
+        </div>
+    </li>
+
+    </ul>
+
+  </div>
+  <footer></footer>
+  <script src="audioFile.js"></script>
+</body>
+</html>

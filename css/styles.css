@@ -1,0 +1,200 @@
+html {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+}
+
+body {
+        max-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: whitesmoke;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 2s ease-in;
+        -webkit-transition: opacity 2s ease-in;
+}
+
+h1 {
+        font-size: 1.5em;
+        opacity: .85;
+        overflow: hidden; 
+        border-right: solid transparent 1px;
+        white-space: nowrap; 
+        letter-spacing: .15em; 
+        margin-top: 1em;
+        margin-bottom: 1em;
+        animation: 
+        typing 1s steps(40, end),
+        blink-caret .65s step-end 2; 
+        animation-fill-mode: backwards; 
+        animation-delay: 1s;
+}
+
+ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2em;
+}
+
+li {
+        opacity: .8;
+        transition: opacity 2s ease-in-out;
+        list-style: none;
+        margin-bottom: 2em;
+}
+
+li:hover {
+        opacity: 1;
+}
+
+#intro  {
+        opacity: .75;
+        letter-spacing: .15em; 
+        overflow: hidden;
+        margin-top: 2em;
+        border-right: solid transparent 1px;
+        white-space: nowrap; 
+        animation: 
+        typing 1s steps(40, end),
+        blink-caret 1.5s step-end 2; 
+        animation-fill-mode: backwards; 
+        animation-delay: 2.5s;
+}
+
+footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1em;
+}
+
+.home-page-footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+}
+
+audio {
+        color: transparent;
+}
+
+.intro-to-player {
+        margin: 0 1.5em 0 1.5em;
+        opacity: .85;
+}
+
+.tape-Deck {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+}
+
+.song-container {
+        display: flex;
+        margin-right: 10%;
+        flex-direction: column;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: .25em;
+        border-width: .05em;
+        transition: border-color 2s ease-in-out;
+}
+
+.song-details {
+        opacity: .55;
+        transition: opacity 2s ease-in-out;
+        font-size: .75em;
+        margin-left: 1em;
+        margin-right: 1em;
+}
+
+.song-container:hover {
+        border-color: whitesmoke;
+}
+ 
+.song-container:hover .player-button {
+        border-color: whitesmoke;
+        color: white;
+        cursor: pointer;
+}
+
+.song-container:hover .song-details {
+        opacity: 1;
+}
+
+.song-title {
+        text-align: center;
+        opacity: .9;
+        margin-top: 1em;
+        margin-bottom: 1em;
+}
+
+.player-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+        margin-left: .5em;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: .9em;
+        padding: .5em .5em .5em .5em;
+        background-color: transparent;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: .25em;
+        border-width: .05em;
+        transition: border-color 2s;
+        text-align: center;
+        width: 3em;
+        color: whitesmoke;
+}
+
+@keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+@keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-right: solid whitesmoke 1px; } 
+      }
+
+@media (min-width: 740px) {
+
+        body {
+                font-size:  115%;
+        }
+
+        ul {
+                margin-top: 5em;
+        }
+
+        footer img {
+                height: 50px;
+                width: 50px;
+        }
+
+        .song-container {
+                margin-right: 5%;;
+        }
+}
+
+@media (min-width: 1024px) {
+        body {
+                font-size:  125%;
+        }
+
+        .song-container {
+                margin-right: 3.5%;;
+        }
+
+}
